@@ -1,0 +1,15 @@
+{
+  "name": "bix-arc-safesign",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:pq": "node scripts/test_pq_mainnet.mjs",
+    "compile": "node scripts/compile.mjs"
+  },
+  "dependencies": {
+    "@noble/post-quantum": "0.7.0",
+    "solc": "0.8.30",
+    "viem": "2.38.5"
+  }
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BiX Arc SafeSign</title>
+<meta name="description" content="Hybrid wallet plus post-quantum approval proof for Arc Mainnet.">
+<meta name="theme-color" content="#03090e">
+<style>
+:root{--e:#ff5a1f;--e2:#ff7a28;--c:#03090e;--l:#f5f5f2;--line:#1b3442;--g:#7ee2b8}
+*{box-sizing:border-box}body{margin:0;background:var(--c);color:var(--l);font-family:Inter,Arial,sans-serif;line-height:1.5;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 72% 8%,rgba(255,90,31,.06),transparent 34%);z-index:20}
+.hero{min-height:710px;background:radial-gradient(circle at 72% 48%,rgba(255,90,31,.14),transparent 24%),radial-gradient(circle at 74% -8%,#193246 0,#071520 28%,#03090e 63%);border-bottom:1px solid var(--line)}
+.nav{width:min(1180px,calc(100% - 48px));height:82px;margin:auto;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.08)}
+.brand{display:grid}.mark{font-size:26px;font-weight:950;letter-spacing:-1.5px}.mark span{color:var(--e)}.brand small{font-size:8px;letter-spacing:3.8px;color:#a7b3ba}.live{font-size:10px;letter-spacing:2px;color:#c0cbd0}.live:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--e);margin-right:8px;box-shadow:0 0 18px rgba(255,90,31,.8)}
+.wrap{width:min(1180px,calc(100% - 48px));margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;min-height:600px;padding:70px 0 90px}
+.eyebrow{font-size:10px;font-weight:800;letter-spacing:4.8px;color:#d4dde2;margin:0 0 22px}.eyebrow:after{content:"";display:block;width:38px;height:2px;background:var(--e);margin-top:14px}
+h1{font-size:clamp(46px,5.2vw,76px);line-height:.98;letter-spacing:-3.2px;margin:0 0 24px}h1>span{display:block;font-size:.33em;letter-spacing:7px;color:var(--e);margin-bottom:14px}h1 em{font-style:normal;color:var(--e)}
+.lead{max-width:650px;color:#bdc9cf;font-size:17px}.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.chip{border:1px solid #3b5969;border-radius:999px;padding:8px 11px;font-size:9px;letter-spacing:1.4px;color:#b9c7ce}
+.visual{position:relative;height:450px;display:grid;place-items:center}.halo{position:absolute;width:360px;height:360px;border-radius:50%;border:2px solid var(--e);box-shadow:0 0 16px var(--e),0 0 70px rgba(255,90,31,.3),inset 0 0 45px rgba(255,90,31,.12);background:radial-gradient(circle,#07131a 0,#02070b 68%,#0b1115 69%)}
+.shield{position:relative;z-index:2;text-align:center}.shield b{font-size:72px;letter-spacing:-4px}.shield b span{color:var(--e)}.shield p{font-size:10px;letter-spacing:2.5px;color:#aebdc5}
+main{width:min(1120px,calc(100% - 32px));margin:auto;padding:30px 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:rgba(8,28,40,.72);border:1px solid var(--line);border-radius:20px;padding:25px}.card small{color:var(--e);letter-spacing:1.5px}.card h2{font-size:25px;margin:8px 0 10px}.card p{color:#aebdc5;margin:0}.demo{margin-top:18px}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.status{margin-top:14px;padding:14px 16px;background:#02090d;border:1px solid #163241;border-radius:12px;color:#c8d4da;font-size:13px}.status strong{color:var(--g)}
+button{margin-top:14px;border:0;border-radius:9px;padding:14px 18px;font-weight:850;color:#fff;background:linear-gradient(135deg,var(--e2),var(--e));cursor:pointer}.secondary{background:transparent;border:1px solid #3b5969}button:disabled{opacity:.4;cursor:not-allowed}code{word-break:break-all;color:#ff8a52}
+footer{width:min(1120px,calc(100% - 32px));margin:auto;border-top:1px solid var(--line);padding:28px 0 44px;color:#758a96;font-size:11px;display:flex;justify-content:space-between}
+@media(max-width:900px){.wrap{grid-template-columns:1fr}.visual{order:-1;height:300px}.halo{width:260px;height:260px}.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}}@media(max-width:620px){.nav,.wrap{width:calc(100% - 28px)}h1{font-size:42px;letter-spacing:-2px}.visual{height:250px}.halo{width:220px;height:220px}.shield b{font-size:54px}footer{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<section class="hero">
+<header class="nav"><div class="brand"><div class="mark">BiX <span>ARC</span></div><small>SAFESIGN</small></div><div class="live">HYBRID APPROVAL</div></header>
+<div class="wrap">
+<div><p class="eyebrow">POST-QUANTUM APPROVAL FOR ARC</p><h1><span>ARC SAFESIGN</span>Two signatures.<br>One <em>safe approval.</em></h1><p class="lead">Arc SafeSign combines the normal wallet transaction signature with Arc's native SLH-DSA post-quantum verifier. A wallet key alone is not enough to produce a protected approval.</p><div class="chips"><span class="chip">ARC MAINNET</span><span class="chip">SLH-DSA-SHA2-128s</span><span class="chip">NON-CUSTODIAL</span><span class="chip">NO TOKEN MOVEMENT</span></div></div>
+<div class="visual"><div class="halo"></div><div class="shield"><b>2<span>x</span></b><p>CLASSICAL + POST-QUANTUM</p></div></div>
+</div></section>
+<main>
+<section class="grid">
+<article class="card"><small>01</small><h2>Register</h2><p>Register only the hash of a locally generated post-quantum public key.</p></article>
+<article class="card"><small>02</small><h2>Sign</h2><p>Sign the protected action locally with SLH-DSA. The private PQ key stays local.</p></article>
+<article class="card"><small>03</small><h2>Approve</h2><p>The wallet submits the action and Arc's native verifier checks the second signature.</p></article>
+</section>
+<section class="card demo">
+<small>LOCAL CRYPTO DEMO</small><h2>Generate a post-quantum approval</h2>
+<p>The cryptographic path runs locally in your browser. Arc Mainnet verifier compatibility has passed a live read-only test.</p>
+<div class="row">
+<div><button id="gen">Generate PQ key</button><div class="status" id="key"><strong>READY</strong> - No key generated.</div></div>
+<div><button id="sign" class="secondary" disabled>Sign demo action</button><div class="status" id="sig"><strong>READY</strong> - Waiting for a local key.</div></div>
+</div>
+<div class="status"><strong>MAINNET VERIFY PASS</strong> - Arc chain 5042 accepted a live SLH-DSA signature through precompile <code>0x1800000000000000000000000000000000000004</code>.</div>
+</section>
+</main>
+<footer><span>BiX Arc SafeSign - Experimental security primitive</span><span>No custody - No token transfer - Evidence-first</span></footer>
+<script type="module">
+import { slh_dsa_sha2_128s as slh } from 'https://esm.sh/@noble/post-quantum@0.7.0/slh-dsa.js';
+let keys=null;const hex=b=>Array.from(b).map(x=>x.toString(16).padStart(2,'0')).join('');
+document.getElementById('gen').onclick=()=>{keys=slh.keygen();document.getElementById('key').innerHTML='<strong>GENERATED</strong> - Public key: <code>'+hex(keys.publicKey)+'</code>';document.getElementById('sign').disabled=false;};
+document.getElementById('sign').onclick=()=>{if(!keys)return;const msg=new TextEncoder().encode('BiX Arc SafeSign demo approval');const sig=slh.sign(msg,keys.secretKey);const ok=slh.verify(sig,msg,keys.publicKey);document.getElementById('sig').innerHTML='<strong>'+(ok?'VALID':'FAILED')+'</strong> - SLH-DSA signature bytes: '+sig.length;};
+</script>
+</body></html>
