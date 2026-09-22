@@ -1,0 +1,18 @@
+{
+  "chainId": 5042,
+  "tx": "0x5da96ab201ab4740ff9337a2f189d1d7155d3b18f42fe43517480bff2d99a782",
+  "contractAddress": "0x7be8fa21cfb1913471dc1f02e141d5b9bc74fe2f",
+  "status": "PASS",
+  "blockNumber": 22171217,
+  "gasUsed": "443565",
+  "effectiveGasPriceWei": "22000000000",
+  "deployCostUSDC": "0.009758430",
+  "onchainCodeBytes": 1805,
+  "localRuntimeBytes": 1805,
+  "onchainRuntimeHash": "0x666c2897d94ca72b789d8cd07ef2f8078f3b11c0ecb533e2446441777a77f709",
+  "localRuntimeHash": "0x666c2897d94ca72b789d8cd07ef2f8078f3b11c0ecb533e2446441777a77f709",
+  "runtimeMatch": true,
+  "pqPrecompile": "0x1800000000000000000000000000000000000004",
+  "scheme": "SLH-DSA-SHA2-128s",
+  "mainnetPQReadOnlyVerify": true
+}
